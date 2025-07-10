@@ -118,49 +118,77 @@ function showAllProjects() {
   renderProjects();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const carousel = document.getElementById('carousel');
-  const dotsContainer = document.getElementById('dots');
-  const cards = carousel.querySelectorAll('.card');
-  const cardsPerView = 3;
-  const gap = 20;
-  let currentIndex = 0;
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 3,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
-  const cardWidth = cards[0].offsetWidth;
-  const totalPages = Math.ceil(cards.length / cardsPerView);
+// document.addEventListener('DOMContentLoaded', () => {
+//   const carousel = document.getElementById('carousel');
+//   const dotsContainer = document.getElementById('dots');
+//   const cards = carousel.querySelectorAll('.card');
+//   const cardsPerView = 3;
+//   const gap = 20;
+//   let currentIndex = 0;
 
-  // Create dots dynamically
-  function renderDots() {
-    dotsContainer.innerHTML = '';
-    for (let i = 0; i < totalPages; i++) {
-      const dot = document.createElement('span');
-      dot.classList.add('dot');
-      if (i === 0) dot.classList.add('active');
+//   const cardWidth = cards[0].offsetWidth;
+//   const totalPages = Math.ceil(cards.length / cardsPerView);
 
-      dot.addEventListener('click', () => {
-        currentIndex = i;
-        updateCarousel();
-      });
+//   // Create dots dynamically
+//   function renderDots() {
+//     dotsContainer.innerHTML = '';
+//     for (let i = 0; i < totalPages; i++) {
+//       const dot = document.createElement('span');
+//       dot.classList.add('dot');
+//       if (i === 0) dot.classList.add('active');
 
-      dotsContainer.appendChild(dot);
-    }
-  }
+//       dot.addEventListener('click', () => {
+//         currentIndex = i;
+//         updateCarousel();
+//       });
 
-  // Move carousel to the selected page
-  function updateCarousel() {
-    const scrollX = currentIndex * (cardWidth + gap) * cardsPerView;
-    carousel.style.transform = `translateX(-${scrollX}px)`;
-    updateActiveDot();
-  }
+//       dotsContainer.appendChild(dot);
+//     }
+//   }
 
-  // Update dot active state
-  function updateActiveDot() {
-    const dots = dotsContainer.querySelectorAll('.dot');
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('active', i === currentIndex);
-    });
-  }
+//   // Move carousel to the selected page
+//   function updateCarousel() {
+//     const scrollX = currentIndex * (cardWidth + gap) * cardsPerView;
+//     carousel.style.transform = `translateX(-${scrollX}px)`;
+//     updateActiveDot();
+//   }
 
-  renderDots(); // Render dot indicators
-});
+//   // Update dot active state
+//   function updateActiveDot() {
+//     const dots = dotsContainer.querySelectorAll('.dot');
+//     dots.forEach((dot, i) => {
+//       dot.classList.toggle('active', i === currentIndex);
+//     });
+//   }
+
+//   renderDots(); // Render dot indicators
+// });
 

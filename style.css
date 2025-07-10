@@ -443,24 +443,25 @@
   margin: 10px auto 30px;
 }
 
-.carousel-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-  margin: auto;
-}
+.swiper {
+    width: 100%;
+    padding: 20px 0;
+    
+  }
 
-.carousel {
-  display: flex;
-  gap: 20px;
-  transition: transform 0.5s ease-in-out;
-  width: max-content;
-}
+  .swiper-wrapper{
+    margin-bottom: 10px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
 
 .card {
   background: white;
   width: 300px;
-  height: fit-content;
+  height: 220px;
   padding: 20px;
   border-radius: 8px;
   text-align: left;
@@ -513,25 +514,13 @@
   color: #666;
 }
 
-.dots {
-  text-align: center;
-  margin-top: 20px;
-}
+  .swiper-pagination-bullet {
+    background-color: #ccc;
+  }
 
-.dots .dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 6px;
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dots .dot.active {
-  background-color: #f7b32b;
-}
+  .swiper-pagination-bullet-active {
+    background-color: #f7b32b;
+  }
 
 .contact-section {
   display: flex;
