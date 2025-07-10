@@ -800,6 +800,26 @@ textarea {
   padding-bottom: 8px;
 }
 
+.copyright {
+  display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    color: #767676;
+    gap: 0.75rem;
+}
+
+.copyright span img{
+  width: 21px;
+  height: 21px;
+}
+
+.copyright p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 @media (max-width: 900px) {
   .logo-row {
     flex-wrap: wrap;
