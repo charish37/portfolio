@@ -2,7 +2,8 @@
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', function() {
     document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-    this.classList.add('active');
+    navLinks.classList.remove('open');
+        this.classList.add('active');
   });
 });
 
@@ -12,6 +13,8 @@ const navLinks = document.querySelector('.nav-links');
 toggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
+
+
 
 // Project data
 const projectsData = [
