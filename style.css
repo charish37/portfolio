@@ -761,8 +761,8 @@ textarea {
 .footer-links > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  width: fit-content;
 }
 
 .footer-links h4 {
@@ -820,24 +820,5 @@ textarea {
   line-height: 24px;
 }
 
-@media (max-width: 900px) {
-  .logo-row {
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .footer-content-col,
-  .footer-links {
-    gap: 24px;
-  }
-}
 
-@media (max-width: 600px) {
-  .logo-row {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .footer-content-col,
-  .footer-links {
-    gap: 16px;
-  }
-}
+
