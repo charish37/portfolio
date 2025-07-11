@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+body {
+  background-color: #f4f4f8;
+}
 /* nav bar stylings */
 .navbar {
   display: flex;
@@ -93,6 +96,7 @@
   align-items: flex-end;
   justify-content: space-between;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .floating-icons {
@@ -334,6 +338,119 @@
 @media (max-width: 1250px) {
   .hero-right img {
     width: auto;
+  }
+}
+
+.education-section {
+  padding: 40px 40px 20px 40px;
+}
+
+.education-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.education-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+  padding: 28px 32px;
+  min-width: 260px;
+  max-width: 340px;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.education-card h3 {
+  color: #2b2b2b;
+  margin-bottom: 8px;
+}
+
+.edu-institute {
+  font-size: 15px;
+  color: #ffa400;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.edu-year {
+  font-size: 14px;
+  color: #767676;
+  margin-bottom: 10px;
+}
+
+.education-card p {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    padding: 32px 10px 10px 10px;
+  }
+  .education-list {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .education-card {
+    width: 75%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 20px 14px;
+      align-items: center;
+    justify-content: center;
+  }
+}
+
+.skills-section {
+  padding: 40px 40px 20px 40px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.skill-badge {
+  background: #fff;
+  color: #ffa400;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 12px 28px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  font-family: "Inter", sans-serif;
+  transition: background 0.2s, color 0.2s;
+  border: 1px solid #ffe0a3;
+}
+
+.skill-badge:hover {
+  background: #ffa400;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 32px 10px 10px 10px;
+  }
+  .skills-list {
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .skill-badge {
+    font-size: 14px;
+    padding: 10px 18px;
   }
 }
 
