@@ -1,4 +1,4 @@
-// script.js
+// Navigation logic to show active tab
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', function() {
     document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
@@ -10,11 +10,10 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 const toggle = document.getElementById('navToggle');
 const navLinks = document.querySelector('.nav-links');
 
+// Event listener to toggle the nav toggle button
 toggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
-
-
 
 // Project data
 const projectsData = [
@@ -94,30 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProjects();
 });
 
-// Optional: Function to add new project
-function addProject(newProject) {
-  projectsData.push(newProject);
-  renderProjects();
-}
-
-// Optional: Function to filter projects by tag
-function filterProjectsByTag(tag) {
-  const filteredProjects = projectsData.filter(project => 
-    project.tags.some(projectTag => projectTag.toLowerCase().includes(tag.toLowerCase()))
-  );
-  
-  const projectGrid = document.getElementById('projectGrid');
-  if (projectGrid) {
-    const projectsHTML = filteredProjects.map(project => createProjectCard(project)).join('');
-    projectGrid.innerHTML = projectsHTML;
-  }
-}
-
-// Optional: Function to show all projects (reset filter)
-function showAllProjects() {
-  renderProjects();
-}
-
+// swiper logic to render slides based on the breakpoints and autoplay settings
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -134,10 +110,10 @@ const swiper = new Swiper(".mySwiper", {
         slidesPerView: 2,
       },
       1024: {
-        slidesPerView: 2,
-      },
-      1280: {
         slidesPerView: 3,
+      },
+      1470: {
+        slidesPerView: 4,
       },
     },
     pagination: {
@@ -145,50 +121,3 @@ const swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const carousel = document.getElementById('carousel');
-//   const dotsContainer = document.getElementById('dots');
-//   const cards = carousel.querySelectorAll('.card');
-//   const cardsPerView = 3;
-//   const gap = 20;
-//   let currentIndex = 0;
-
-//   const cardWidth = cards[0].offsetWidth;
-//   const totalPages = Math.ceil(cards.length / cardsPerView);
-
-//   // Create dots dynamically
-//   function renderDots() {
-//     dotsContainer.innerHTML = '';
-//     for (let i = 0; i < totalPages; i++) {
-//       const dot = document.createElement('span');
-//       dot.classList.add('dot');
-//       if (i === 0) dot.classList.add('active');
-
-//       dot.addEventListener('click', () => {
-//         currentIndex = i;
-//         updateCarousel();
-//       });
-
-//       dotsContainer.appendChild(dot);
-//     }
-//   }
-
-//   // Move carousel to the selected page
-//   function updateCarousel() {
-//     const scrollX = currentIndex * (cardWidth + gap) * cardsPerView;
-//     carousel.style.transform = `translateX(-${scrollX}px)`;
-//     updateActiveDot();
-//   }
-
-//   // Update dot active state
-//   function updateActiveDot() {
-//     const dots = dotsContainer.querySelectorAll('.dot');
-//     dots.forEach((dot, i) => {
-//       dot.classList.toggle('active', i === currentIndex);
-//     });
-//   }
-
-//   renderDots(); // Render dot indicators
-// });
-

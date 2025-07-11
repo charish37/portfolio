@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* nav bar stylings */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,7 +32,7 @@
   color: #000;
 }
 
-/* Responsive Navbar */
+/* Nav Toggle Button Stylings */
 .nav-toggle {
   display: none;
   background: none;
@@ -40,6 +42,7 @@
   z-index: 1100;
 }
 
+/* Responsive Navbar Stylings */
 @media (max-width: 900px) {
   .navbar {
     flex-wrap: wrap;
@@ -63,7 +66,7 @@
     align-items: center;
     padding: 24px 20px;
     display: none;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
     z-index: 1001;
     transition: all 0.3s;
   }
@@ -89,9 +92,6 @@
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
-  /* padding-top: 60px;
-  padding-left: 40px; */
-  /* min-height: 90vh; */
   overflow: hidden;
 }
 
@@ -107,7 +107,7 @@
 
 .floating-icons .icon {
   position: absolute;
-  width: 20px; /* adjust per icon */
+  width: 20px;
   animation: floatIcon 5s ease-in-out infinite;
 }
 
@@ -116,14 +116,17 @@
   top: 15%;
   left: 55%;
 }
+
 .green-circle2 {
   top: 15%;
   left: 45%;
 }
+
 .yellow-circle1 {
   top: 10%;
   left: 4%;
 }
+
 .yellow-circle2 {
   top: 15%;
   left: 45%;
@@ -146,46 +149,50 @@
 
 /* Floating animation */
 @keyframes floatIcon {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-6px);
   }
 }
 
 @media (max-width: 1250px) {
-      .green-circle1 {
-        top: 3%;
-        left: 1%;
-    }
+  .green-circle1 {
+    top: 3%;
+    left: 1%;
+  }
 
-        .green-circle2 {
-        top: 48%;
-        left: 84%;
-    }
+  .green-circle2 {
+    top: 48%;
+    left: 84%;
+  }
 
-.yellow-circle2 {
+  .yellow-circle2 {
     top: 93%;
     left: 12%;
-}
+  }
 
-.yellow-circle1 {
+  .yellow-circle1 {
     top: 21%;
     left: 12%;
-}
-.blue-square {
+  }
+
+  .blue-square {
     top: 62%;
     left: 18%;
-}
-.green-circle2 {
+  }
+
+  .green-circle2 {
     top: 19%;
     left: 67%;
-}
+  }
 }
 
-/* Responsive tweaks */
+/* Responsive floating icon position */
 @media (max-width: 768px) {
   .floating-icons .icon {
     width: 14px;
@@ -195,21 +202,22 @@
     top: 15%;
     left: 4%;
   }
-      .blue-square {
-        top: 58%;
-        left: 8%;
-    }
+
+  .blue-square {
+    top: 58%;
+    left: 8%;
+  }
+
   .yellow-diamond {
     top: 8%;
     right: 8%;
   }
+
   .orange-triangle {
     bottom: 6%;
     right: 6%;
   }
 }
-
-
 
 .hero-left {
   display: flex;
@@ -230,7 +238,7 @@
 }
 
 .hero-left h1 .highlight-role {
-  color: #ffa400; /* Yellow from Figma */
+  color: #ffa400;
 }
 
 .hero-left p {
@@ -329,7 +337,6 @@
   }
 }
 
-/* Section Titles */
 .section-title {
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -348,7 +355,6 @@
   margin: 0 auto 40px;
 }
 
-/* Grid Layout */
 .projects-section {
   background: #f4f4f8;
   padding: 20px 40px;
@@ -361,7 +367,6 @@
   justify-items: center;
 }
 
-/* Card Style */
 .project-card {
   background: #fff;
   border-radius: 12px;
@@ -402,7 +407,6 @@
   margin-bottom: 15px;
 }
 
-/* Tags */
 .tags span {
   display: inline-block;
   background: #efefef;
@@ -444,19 +448,18 @@
 }
 
 .swiper {
-    width: 100%;
-    padding: 20px 0;
-    
-  }
+  width: 100%;
+  padding: 20px 0;
+}
 
-  .swiper-wrapper{
-    margin-bottom: 10px;
-  }
+.swiper-wrapper {
+  margin-bottom: 10px;
+}
 
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-  }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
 
 .card {
   background: white;
@@ -514,13 +517,13 @@
   color: #666;
 }
 
-  .swiper-pagination-bullet {
-    background-color: #ccc;
-  }
+.swiper-pagination-bullet {
+  background-color: #ccc;
+}
 
-  .swiper-pagination-bullet-active {
-    background-color: #f7b32b;
-  }
+.swiper-pagination-bullet-active {
+  background-color: #f7b32b;
+}
 
 .contact-section {
   display: flex;
@@ -628,12 +631,15 @@ textarea {
   box-sizing: border-box;
 }
 
+.info-card-icon {
+  border-radius: 50%;
+  background-color: #fbbc04;
+}
+
 .info-card .icon {
   width: 24px;
   height: 24px;
-  background-color: #fbbc04;
   padding: 8px;
-  border-radius: 50%;
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -671,14 +677,13 @@ textarea {
     padding: 0 10px 40px 10px;
     gap: 20px;
   }
+
   .form-section,
   .contact-info-section {
     max-width: 100%;
     width: 100%;
   }
 }
-
-
 
 .site-footer {
   background: #fff;
@@ -751,7 +756,7 @@ textarea {
   gap: 32px;
 }
 
-.footer-links > div {
+.footer-links>div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -795,25 +800,23 @@ textarea {
 
 .copyright {
   display: flex;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
-    color: #767676;
-    gap: 0.75rem;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  color: #767676;
+  gap: 0.75rem;
 }
 
-.copyright span img{
+.copyright span img {
   width: 21px;
   height: 21px;
 }
 
-.copyright p{
+.copyright p {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
 }
-
-/* Add below your existing CSS */
 
 @media (max-width: 920px) {
   .footer-links {
@@ -827,7 +830,7 @@ textarea {
     gap: 24px;
   }
 
-  .copyright{
+  .copyright {
     margin: 3% auto;
   }
 }
@@ -837,11 +840,10 @@ textarea {
     flex-direction: column;
     align-items: center;
     text-align: center;
-        align-content: center;
-
+    align-content: center;
   }
 
-  .footer-links > div {
+  .footer-links>div {
     width: 100%;
     align-items: center;
   }
@@ -851,7 +853,7 @@ textarea {
     padding-right: 0;
   }
 
-  .badge-col .main-badge{
+  .badge-col .main-badge {
     padding-right: 10px;
   }
 
@@ -869,5 +871,3 @@ textarea {
     gap: 24px;
   }
 }
-
-

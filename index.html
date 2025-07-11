@@ -1,521 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- 🔹 Navbar -->
-    <header class="navbar">
-      <div class="logo">
-        <img src="./assets/Logo.png" alt="Logo" />
-      </div>
-      <button class="nav-toggle" id="navToggle">☰</button>
-      <nav class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#recommendations">Recommendations</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="floating-icons">
-        <img
-          src="./assets/green-circle.png"
-          class="icon green-circle1"
-          alt="green-circle"
-        />
-        <img
-          src="./assets/green-circle.png"
-          class="icon green-circle2"
-          alt="green-circle"
-        />
-        <img
-          src="./assets/yellow-circle.png"
-          class="icon yellow-circle1"
-          alt="yellow-circle"
-        />
-        <img
-          src="./assets/yellow-circle.png"
-          class="icon yellow-circle2"
-          alt="yellow-circle"
-        />
-        <img
-          src="./assets/blue-square.png"
-          class="icon blue-square"
-          alt="blue-square"
-        />
-        <img
-          src="./assets/yellow-square.png"
-          class="icon yellow-diamond"
-          alt="yellow-diamond"
-        />
-        <img
-          src="./assets/orange-triangle.png"
-          class="icon orange-triangle"
-          alt="orange-triangle"
-        />
-      </div>
-      <div class="hero-left">
-        <h1>
-          I’m Rayan Adlrdard <br />
-          <span class="highlight-role">Front-end</span>
-          Developer
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
-          feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
-          lectus.
-        </p>
-        <button class="hire-me-btn">HIRE ME →</button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- link to consume Inter, sans-serif font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- Link to consume swiper stylings -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <div class="hero-right">
-        <img src="./assets/proud_coder.png" alt="Proud Coder" />
-      </div>
-    </section>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="./assets/Logo.png" alt="Logo" />
+    </div>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#recommendations">Recommendations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="projects" class="projects-section">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-subtitle">
-        Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet
-        Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="floating-icons">
+      <img src="./assets/green-circle.png" class="icon green-circle1" alt="green-circle" />
+      <img src="./assets/green-circle.png" class="icon green-circle2" alt="green-circle" />
+      <img src="./assets/yellow-circle.png" class="icon yellow-circle1" alt="yellow-circle" />
+      <img src="./assets/yellow-circle.png" class="icon yellow-circle2" alt="yellow-circle" />
+      <img src="./assets/blue-square.png" class="icon blue-square" alt="blue-square" />
+      <img src="./assets/yellow-square.png" class="icon yellow-diamond" alt="yellow-diamond" />
+      <img src="./assets/orange-triangle.png" class="icon orange-triangle" alt="orange-triangle" />
+    </div>
+    <div class="hero-left">
+      <h1>
+        I’m Devakiran Nadipalli <br />
+        <span class="highlight-role">Front-end</span>
+        Developer
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
+        feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
+        lectus.
       </p>
-
-      <div class="project-grid" id="projectGrid">
-        <!-- Project Card -->
-        <!-- <div class="project-card">
-      <img src="./assets/project1.png" alt="Project Screenshot">
-      <div class="card-content">
-        <h3>How To Make Flyer Design</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consec Adipisicing Elit Awd And Lorem Ipsum...</p>
-        <div class="tags">
-          <span>Typescript</span><span>ReactJs</span><span>NextJs</span><span>CSS</span>
-          <span>HTML</span><span>MongoDB</span>
-        </div>
-      </div>
+      <button class="hire-me-btn">HIRE ME →</button>
     </div>
-    <div class="project-card">
-      <img src="./assets/project2.png" alt="Project Screenshot">
-      <div class="card-content">
-        <h3>How To Make Flyer Design</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consec Adipisicing Elit Awd And Lorem Ipsum...</p>
-        <div class="tags">
-          <span>Typescript</span><span>ReactJs</span><span>NextJs</span><span>CSS</span>
-          <span>HTML</span><span>MongoDB</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="./assets/project3.png" alt="Project Screenshot">
-      <div class="card-content">
-        <h3>How To Make Flyer Design</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consec Adipisicing Elit Awd And Lorem Ipsum...</p>
-        <div class="tags">
-          <span>Typescript</span><span>ReactJs</span><span>NextJs</span><span>CSS</span>
-          <span>HTML</span><span>MongoDB</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="./assets/project4.png" alt="Project Screenshot">
-      <div class="card-content">
-        <h3>How To Make Flyer Design</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consec Adipisicing Elit Awd And Lorem Ipsum...</p>
-        <div class="tags">
-          <span>Typescript</span><span>ReactJs</span><span>NextJs</span><span>CSS</span>
-          <span>HTML</span><span>MongoDB</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="./assets/project5.png" alt="Project Screenshot">
-      <div class="card-content">
-        <h3>How To Make Flyer Design</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consec Adipisicing Elit Awd And Lorem Ipsum...</p>
-        <div class="tags">
-          <span>Typescript</span><span>ReactJs</span><span>NextJs</span><span>CSS</span>
-          <span>HTML</span><span>MongoDB</span>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="./assets/project6.png" alt="Project Screenshot">
-      <div class="card-content">
-        <h3>How To Make Flyer Design</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consec Adipisicing Elit Awd And Lorem Ipsum...</p>
-        <div class="tags">
-          <span>Typescript</span><span>ReactJs</span><span>NextJs</span><span>CSS</span>
-          <span>HTML</span><span>MongoDB</span>
-        </div>
-      </div>
-    </div> -->
-      </div>
-    </section>
 
-    <!-- <section id="recommendations" class="recommendations">
-  <h2>Recommendations</h2>
-  <p class="subtext">Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
-
-  <div class="carousel-container">
-    <div class="carousel" id="carousel">
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <h3>Great Quality!</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…</p>
-        <div class="profile">
-          <img src="./assets/recommendation1.png" />
-          <div class="info">
-            <strong>James Gouse</strong>
-            <span>Graphic Designer</span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <h3>Great Quality!</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…</p>
-        <div class="profile">
-          <img src="./assets/recommendation2.png" />
-          <div class="info">
-            <strong>James Gouse</strong>
-            <span>Graphic Designer</span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <h3>Great Quality!</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…</p>
-        <div class="profile">
-          <img src="./assets/recommendation3.png" />
-          <div class="info">
-            <strong>James Gouse</strong>
-            <span>Graphic Designer</span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <h3>Great Quality!</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…</p>
-        <div class="profile">
-          <img src="./assets/recommendation1.png" />
-          <div class="info">
-            <strong>James Gouse</strong>
-            <span>Graphic Designer</span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <h3>Great Quality!</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…</p>
-        <div class="profile">
-          <img src="./assets/recommendation2.png" />
-          <div class="info">
-            <strong>James Gouse</strong>
-            <span>Graphic Designer</span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <h3>Great Quality!</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…</p>
-        <div class="profile">
-          <img src="./assets/recommendation3.png" />
-          <div class="info">
-            <strong>James Gouse</strong>
-            <span>Graphic Designer</span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <h3>Great Quality!</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…</p>
-        <div class="profile">
-          <img src="./assets/recommendation1.png" />
-          <div class="info">
-            <strong>James Gouse</strong>
-            <span>Graphic Designer</span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="stars">★★★★★</div>
-        <h3>Great Quality!</h3>
-        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…</p>
-        <div class="profile">
-          <img src="./assets/recommendation2.png" />
-          <div class="info">
-            <strong>James Gouse</strong>
-            <span>Graphic Designer</span>
-          </div>
-        </div>
-      </div>
-
+    <div class="hero-right">
+      <img src="./assets/proud_coder.png" alt="Proud Coder" />
     </div>
-    <div class="dots" id="dots"></div>
-  </div>
-</section> -->
+  </section>
 
-    <section id="recommendations" class="recommendations">
-      <h2>Recommendations</h2>
-      <p class="subtext">
-        Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet
-        Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum
-      </p>
+  <!-- Projects section -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">
+      Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet
+      Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum
+    </p>
+    <!-- Dynamically rendering project cards at project-grid from java script code to make reusable code -->
+    <div class="project-grid" id="projectGrid"></div>
+  </section>
 
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="stars">★★★★★</div>
-              <h3>Great Quality!</h3>
-              <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit...</p>
-              <div class="profile">
-                <img src="./assets/recommendation1.png" />
-                <div class="info">
-                  <strong>James Gouse</strong>
-                  <span>Graphic Designer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="stars">★★★★★</div>
-              <h3>Great Quality!</h3>
-              <p>
-                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
-                Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
-              </p>
-              <div class="profile">
-                <img src="./assets/recommendation2.png" />
-                <div class="info">
-                  <strong>James Gouse</strong>
-                  <span>Graphic Designer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="stars">★★★★★</div>
-              <h3>Great Quality!</h3>
-              <p>
-                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
-                Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
-              </p>
-              <div class="profile">
-                <img src="./assets/recommendation3.png" />
-                <div class="info">
-                  <strong>James Gouse</strong>
-                  <span>Graphic Designer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="stars">★★★★★</div>
-              <h3>Great Quality!</h3>
-              <p>
-                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
-                Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
-              </p>
-              <div class="profile">
-                <img src="./assets/recommendation1.png" />
-                <div class="info">
-                  <strong>James Gouse</strong>
-                  <span>Graphic Designer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="stars">★★★★★</div>
-              <h3>Great Quality!</h3>
-              <p>
-                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
-                Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
-              </p>
-              <div class="profile">
-                <img src="./assets/recommendation2.png" />
-                <div class="info">
-                  <strong>James Gouse</strong>
-                  <span>Graphic Designer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="stars">★★★★★</div>
-              <h3>Great Quality!</h3>
-              <p>
-                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
-                Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
-              </p>
-              <div class="profile">
-                <img src="./assets/recommendation3.png" />
-                <div class="info">
-                  <strong>James Gouse</strong>
-                  <span>Graphic Designer</span>
-                </div>
+  <!-- Recommendation section -->
+  <section id="recommendations" class="recommendations">
+    <h2>Recommendations</h2>
+    <p class="subtext">
+      Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet
+      Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum
+    </p>
+    <!-- Swiper functionality to display carousel -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="stars">★★★★★</div>
+            <h3>Great Quality!</h3>
+            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit...</p>
+            <div class="profile">
+              <img src="./assets/recommendation1.png" />
+              <div class="info">
+                <strong>James Gouse</strong>
+                <span>Graphic Designer</span>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Pagination Dots -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-
-    <section class="contact-section">
-      <div class="form-section">
-        <h2>Leave ME Your Info</h2>
-        <div class="form-group">
-          <div class="input-block">
-            <label for="name">Your Full Name <span>( Required )</span></label>
-            <input type="text" id="name" />
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="stars">★★★★★</div>
+            <h3>Great Quality!</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
+              Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
+            </p>
+            <div class="profile">
+              <img src="./assets/recommendation2.png" />
+              <div class="info">
+                <strong>James Gouse</strong>
+                <span>Graphic Designer</span>
+              </div>
+            </div>
           </div>
-
-          <div class="input-block">
-            <label for="email">Your Email <span>( Required )</span></label>
-            <input type="email" id="email" />
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="stars">★★★★★</div>
+            <h3>Great Quality!</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
+              Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
+            </p>
+            <div class="profile">
+              <img src="./assets/recommendation3.png" />
+              <div class="info">
+                <strong>James Gouse</strong>
+                <span>Graphic Designer</span>
+              </div>
+            </div>
           </div>
-
-          <div class="input-block">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" />
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="stars">★★★★★</div>
+            <h3>Great Quality!</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
+              Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
+            </p>
+            <div class="profile">
+              <img src="./assets/recommendation1.png" />
+              <div class="info">
+                <strong>James Gouse</strong>
+                <span>Graphic Designer</span>
+              </div>
+            </div>
           </div>
-
-          <div class="input-block">
-            <label for="message">Your Message</label>
-            <textarea id="message"></textarea>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="stars">★★★★★</div>
+            <h3>Great Quality!</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
+              Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
+            </p>
+            <div class="profile">
+              <img src="./assets/recommendation2.png" />
+              <div class="info">
+                <strong>James Gouse</strong>
+                <span>Graphic Designer</span>
+              </div>
+            </div>
           </div>
-
-          <button class="submit-btn">SEND MESSAGE</button>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="stars">★★★★★</div>
+            <h3>Great Quality!</h3>
+            <p>
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
+              Nulla Diam In Ac Dictum A Urna Viverra Morbi. Morbi Donec Amet…
+            </p>
+            <div class="profile">
+              <img src="./assets/recommendation3.png" />
+              <div class="info">
+                <strong>James Gouse</strong>
+                <span>Graphic Designer</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="contact-info-section">
-        <!-- You can reuse this structure for 3 cards: Location, Email, Phone -->
-        <h2>Contact Information</h2>
-        <div class="contact-info-group">
-          <div class="info-card">
-            <img src="./assets/map-icon.svg" class="icon" alt="map" />
-            <ul>
-              <li><strong>Country:</strong> Bangladesh</li>
-              <li><strong>City:</strong> Dhaka</li>
-              <li><strong>Street:</strong> 35 Vhatara, Badda</li>
-            </ul>
+      <!-- Pagination Dots for carousel-->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact-section">
+    <div class="form-section">
+      <h2>Leave ME Your Info</h2>
+      <div class="form-group">
+        <div class="input-block">
+          <label for="name">Your Full Name <span>( Required )</span></label>
+          <input type="text" id="name" />
+        </div>
+        <div class="input-block">
+          <label for="email">Your Email <span>( Required )</span></label>
+          <input type="email" id="email" />
+        </div>
+        <div class="input-block">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" />
+        </div>
+        <div class="input-block">
+          <label for="message">Your Message</label>
+          <textarea id="message"></textarea>
+        </div>
+        <button class="submit-btn">SEND MESSAGE</button>
+      </div>
+    </div>
+
+    <div class="contact-info-section" id="contact">
+      <h2>Contact Information</h2>
+      <div class="contact-info-group">
+        <div class="info-card">
+          <div class="info-card-icon">
+            <img src="./assets/map.png" class="icon" alt="map" />
           </div>
-          <div class="info-card">
-            <img src="./assets/map-icon.svg" class="icon" alt="map" />
-            <ul>
-              <li><strong>Country:</strong> Bangladesh</li>
-              <li><strong>City:</strong> Dhaka</li>
-              <li><strong>Street:</strong> 35 Vhatara, Badda</li>
-            </ul>
+          <ul>
+            <li><strong>Country:</strong> India</li>
+            <li><strong>City:</strong> Vishakapatnam</li>
+            <li><strong>Street:</strong> 2-65/1 Thummapala, Anakapalli</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">
+            <img src="./assets/mail.png" class="icon" alt="map" />
           </div>
-          <div class="info-card">
-            <img src="./assets/map-icon.svg" class="icon" alt="map" />
-            <ul>
-              <li><strong>Country:</strong> Bangladesh</li>
-              <li><strong>City:</strong> Dhaka</li>
-              <li><strong>Street:</strong> 35 Vhatara, Badda</li>
-            </ul>
+          <ul>
+            <li><strong>Email:</strong>Devakiran2414@gmail.com</li>
+            <li><strong>Skype:</strong>@devakiran</li>
+            <li><strong>Telegram:</strong>@devakiran</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">
+            <img src="./assets/smartphone.png" class="icon" alt="map" />
           </div>
+          <ul>
+            <li><strong>Support Services:</strong>15369</li>
+            <li><strong>Office:</strong>+91 (123)456-789</li>
+            <li><strong>Personal:</strong>+91 (123)456-789</li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <footer class="site-footer">
-  <div class="top-row">
-    <div class="logo-row">
-      <img src="assets/logo1.png" alt="logo1">
-      <img src="assets/logo2.png" alt="logo2">
-      <img src="assets/logo3.png" alt="logo3">
-      <img src="assets/logo4.png" alt="logo4">
     </div>
-    
-    <div class="footer-links">
-      <div class="badge-col">
-      <img src="assets/Logo.png" class="main-badge" alt="main badge">
-      <div class="badge-rating">
-        <img src="assets/upwork.png" alt="Badge 1">
-        <span>4.5/5 Rating On Lorem</span>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="site-footer">
+    <div class="top-row">
+      <div class="logo-row">
+        <img src="assets/logo1.png" alt="logo1">
+        <img src="assets/logo2.png" alt="logo2">
+        <img src="assets/logo3.png" alt="logo3">
+        <img src="assets/logo4.png" alt="logo4">
       </div>
-      <div class="badge-rating">
-        <img src="assets/dribble.png" alt="Badge 2">
-        <span>9/10 Rating On Ipsum</span>
-      </div>
-      <div class="badge-rating">
-        <img src="assets/fiverr.png" alt="Badge 3">
-        <span>4.5/5 Rating On Dorel</span>
+      <div class="footer-links">
+        <div class="badge-col">
+          <img src="assets/Logo.png" class="main-badge" alt="main badge">
+          <div class="badge-rating">
+            <img src="assets/upwork.png" alt="Badge 1">
+            <span>4.5/5 Rating On Lorem</span>
+          </div>
+          <div class="badge-rating">
+            <img src="assets/dribble.png" alt="Badge 2">
+            <span>9/10 Rating On Ipsum</span>
+          </div>
+          <div class="badge-rating">
+            <img src="assets/fiverr.png" alt="Badge 3">
+            <span>4.5/5 Rating On Dorel</span>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li>Home</li>
+            <li>Skills</li>
+            <li>Education</li>
+            <li>Projects</li>
+            <li>Recommendations</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Portfolio</h4>
+          <ul>
+            <li>Frontend Development</li>
+            <li>Backend Development</li>
+            <li>Website Design</li>
+            <li>Machine Learning</li>
+            <li>Problem Solving & DSA</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="socials">
+            <li><img src="assets/linkedin.png" alt="LinkedIn"></li>
+            <li><img src="assets/instagram.png" alt="Instagram"> </li>
+            <li><img src="assets/facebook.png" alt="Facebook"> </li>
+          </ul>
+        </div>
       </div>
     </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li>Home</li>
-          <li>Skills</li>
-          <li>Education</li>
-          <li>Projects</li>
-          <li>Recommendations</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Portfolio</h4>
-        <ul>
-          <li>Frontend Development</li>
-          <li>Backend Development</li>
-          <li>Website Design</li>
-          <li>Machine Learning</li>
-          <li>Problem Solving & DSA</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <ul class="socials">
-          <li><img src="assets/linkedin.png" alt="LinkedIn"></li>
-          <li><img src="assets/instagram.png" alt="Instagram"> </li>
-          <li><img src="assets/facebook.png" alt="Facebook"> </li>
-        </ul>
-      </div>
+    <div class="copyright">
+      <span><img src="assets/copyright.png" alt="copyright" /></span>
+      <p>2024 Copyright, All Right Reserved</p>
     </div>
-  </div>
-  <div class="copyright">
-    <span><img src="assets/copyright.png" alt="copyright" /></span>
-    <p>2024 Copyright, All Right Reserved</p>
-  </div>
-</footer>
+  </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <!-- Script to consume swiper.js functionality a js library -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Script to add javascript logic inside my-portfolio -->
+  <script src="script.js"></script>
+</body>
 </html>
