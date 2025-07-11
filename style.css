@@ -3,6 +3,7 @@
 body {
   background-color: #f4f4f8;
 }
+
 /* nav bar stylings */
 .navbar {
   display: flex;
@@ -346,6 +347,7 @@ body {
   }
 }
 
+/* education stylings */
 .education-section {
   padding: 40px 40px 20px 40px;
 }
@@ -361,7 +363,7 @@ body {
 .education-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
   padding: 28px 32px;
   min-width: 260px;
   max-width: 340px;
@@ -399,21 +401,24 @@ body {
   .education-section {
     padding: 32px 10px 10px 10px;
   }
+
   .education-list {
     flex-direction: column;
     gap: 20px;
     align-items: center;
   }
+
   .education-card {
     width: 75%;
     max-width: 100%;
     min-width: 0;
     padding: 20px 14px;
-      align-items: center;
+    align-items: center;
     justify-content: center;
   }
 }
 
+/* Skills stylings */
 .skills-section {
   padding: 40px 40px 20px 40px;
 }
@@ -433,7 +438,7 @@ body {
   font-size: 16px;
   border-radius: 50px;
   padding: 12px 28px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   font-family: "Inter", sans-serif;
   transition: background 0.2s, color 0.2s;
   border: 1px solid #ffe0a3;
@@ -449,10 +454,12 @@ body {
   .skills-section {
     padding: 32px 10px 10px 10px;
   }
+
   .skills-list {
     gap: 10px;
     margin-top: 20px;
   }
+
   .skill-badge {
     font-size: 14px;
     padding: 10px 18px;
